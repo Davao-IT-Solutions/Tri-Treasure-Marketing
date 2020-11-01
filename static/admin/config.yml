@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: Davao-IT-Solutions/Triple-Sun-Auto-Supply
+site_url: https://www.tri-treasure.com
+display_url: https://www.tri-treasure.com
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+show_preview_links: true
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Primary Image URL", name: "img_link", widget: "string", required: false, default: ""}
+      - {label: "Cover Image URL", name: "img_link2", widget: "string", required: false, default: ""}
+      - {label: "Third Image URL", name: "img_link3", widget: "string", required: false, default: ""}
+      - {label: "Fourth Image URL", name: "img_link4", widget: "string", required: false, default: ""}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['in-stock', 'out-of-stock'], required: true, default: "new"}
+      - {label: "Price", name: "price", widget: "string", required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+      - {label: "Image URL 5", name: "img_link5", widget: "string", required: false, default: ""}
+      - {label: "Image URL 6", name: "img_link6", widget: "string", required: false, default: ""}
+      - {label: "Image URL 7", name: "img_link7", widget: "string", required: false, default: ""}
+      - {label: "Image URL 8", name: "img_link8", widget: "string", required: false, default: ""}
+      - {label: "Image URL 9", name: "img_link9", widget: "string", required: false, default: ""}
+      - {label: "Image URL 10", name: "img_link10", widget: "string", required: false, default: ""}
+      - {label: "Image URL 11", name: "img_link11", widget: "string", required: false, default: ""}
+      - {label: "Image URL 12", name: "img_link12", widget: "string", required: false, default: ""}
