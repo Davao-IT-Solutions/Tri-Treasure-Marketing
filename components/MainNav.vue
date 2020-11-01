@@ -21,9 +21,9 @@
         <a href="#">Contact</a>
       </nuxt-link>
 
-      <nuxt-link tag="li" class="get-started" to="/get-started">
+      <!--<nuxt-link tag="li" class="get-started" to="/get-started">
         <a href="#">Get Started</a>
-      </nuxt-link>
+      </nuxt-link>-->
     </ul>
   </nav><!-- .nav-menu -->
 </template>

@@ -5,7 +5,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-            <strong>Tri-Treasure Agro Marketing</strong> &copy; Copyright. All Rights Reserved
+            <strong>Tri-Treasure Marketing</strong> &copy; Copyright. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
@@ -18,10 +18,18 @@
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+            <nuxt-link to="/">
+              Home
+            </nuxt-link>
+            <nuxt-link to="/about">
+              About
+            </nuxt-link>
+            <nuxt-link to="/privacy-policy">
+              Privacy Policy
+            </nuxt-link>
+            <nuxt-link to="/terms-of-use">
+              Terms of Use
+            </nuxt-link>
           </nav>
         </div>
       </div>

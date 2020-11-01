@@ -1,7 +1,6 @@
 <template>
   <div class="inner-page">
     <About />
-    <Counts />
   </div>
 </template>
 

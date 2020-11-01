@@ -1,0 +1,40 @@
+<template>
+  <div class="inner-page">
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>{{ productData.attributes.title }}</h2>
+        </div>
+
+        <div class="row content d-flex justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="150">
+            <nuxt-content :document="productData2" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData ({ $content, params, payload }) {
+    const productData = await require(`~/content/products/${params.slug}.md`)
+    const productData2 = await $content('products', `${params.slug}`).fetch()
+    return {
+      productData,
+      productData2,
+      payload
+    }
+  },
+  head () {
+    return {
+      title: `${this.productData.attributes.title}`
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>

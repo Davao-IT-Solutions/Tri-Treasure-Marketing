@@ -9,22 +9,13 @@
       <div class="row content">
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            We capitalize on natural herbs as source of treatment for a wide range of ailments, which has long been practiced as traditional medicine by our indigenous communities.
           </p>
-          <ul>
-            <li><i class="ri-check-double-line" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            <li><i class="ri-check-double-line" /> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-          </ul>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            We understand the need of Filipinos to an affordable solution and commit ourselves in finding alternative cure for the welfare of our customers.
           </p>
-          <a href="#" class="btn-learn-more">Learn More</a>
         </div>
       </div>
     </div>

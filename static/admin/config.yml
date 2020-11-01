@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Davao-IT-Solutions/Triple-Sun-Auto-Supply
+  repo: Davao-IT-Solutions/tri-treasure-marketing
 site_url: https://www.tri-treasure.com
 display_url: https://www.tri-treasure.com
 local_backend: true
@@ -10,6 +10,49 @@ public_folder: "/images/uploads"
 show_preview_links: true
 
 collections:
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: 'content/settings/settings.json'
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Global title', name: 'site_title', widget: 'string' }
+          - { label: 'Global description', name: 'site_description', widget: 'string' }
+      - name: 'testimonials'
+        label: 'Testimonials'
+        file: 'content/settings/testimonials.json'
+        description: 'Testimonials'
+        fields:
+          - name: testimonials
+            label: Testimonials
+            label_singular: 'Testimonial'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string', hint: 'Full Name' }
+              - { label: 'Position', name: 'position', widget: 'string', hint: 'Position' }
+              - { label: 'Message', name: 'message', widget: 'markdown' }
+              - { label: 'Picture', name: 'picture', widget: 'image' }
+      - name: 'contact'
+        label: 'Contact Page'
+        file: 'content/settings/contact_page.json'
+        description: 'Contact Page Settings'
+        fields:
+          - { label: 'Site Name', name: 'name', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
+          - { label: 'Address', name: 'address', widget: 'string', required: false }
+          - { label: 'Email Address', name: 'email', widget: 'string', required: false }
+          - { label: 'Phone Number', name: 'phone', widget: 'string', required: false }
+          - { label: 'Google Maps URL', name: 'google_map', widget: 'string', required: false }
+          - { label: 'Facebook URL', name: 'social_fb', widget: 'string', required: false }
+          - { label: 'Twitter URL', name: 'social_tw', widget: 'string', required: false }
+          - { label: 'Instagram URL', name: 'social_ig', widget: 'string', required: false }
+          - { label: 'LinkedIn URL', name: 'social_li', widget: 'string', required: false }
+          - { label: 'Youtube URL', name: 'social_yt', widget: 'string', required: false }
   - name: "products"
     label: "Products"
     folder: "content/products"
@@ -18,16 +61,20 @@ collections:
     sort: "date:desc"
     fields:
       - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Logo", name: "logo", widget: "image", required: false}
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Summary", name: summary, widget: text, required: false}
-      - {label: "Primary Image URL", name: "img_link", widget: "string", required: false, default: ""}
-      - {label: "Cover Image URL", name: "img_link2", widget: "string", required: false, default: ""}
-      - {label: "Third Image URL", name: "img_link3", widget: "string", required: false, default: ""}
-      - {label: "Fourth Image URL", name: "img_link4", widget: "string", required: false, default: ""}
+      - {label: "Description", name: "description", widget: text, required: false}
+      - {label: "Body", name: "body", widget: markdown, required: false}
       - {label: 'Status', name: 'status', widget: 'select', options: ['in-stock', 'out-of-stock'], required: true, default: "new"}
       - {label: "Price", name: "price", widget: "string", required: false}
       - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
       - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+      - {label: "Show on Homepage", name: "show_on_homepage", widget: "boolean", required: false, default: "false"}
+      - {label: "Primary Image URL", name: "img_link", widget: "string", required: false, default: ""}
+      - {label: "Cover Image URL", name: "img_link2", widget: "string", required: false, default: ""}
+      - {label: "Third Image URL", name: "img_link3", widget: "string", required: false, default: ""}
+      - {label: "Fourth Image URL", name: "img_link4", widget: "string", required: false, default: ""}
       - {label: "Image URL 5", name: "img_link5", widget: "string", required: false, default: ""}
       - {label: "Image URL 6", name: "img_link6", widget: "string", required: false, default: ""}
       - {label: "Image URL 7", name: "img_link7", widget: "string", required: false, default: ""}

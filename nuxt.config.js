@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -94,5 +96,35 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    vendor: ['jquery', 'bootstrap'],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery'
+      })
+    ],
+    extend (config, ctx) {
+      // Add this to your build config
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        options: {
+          vue: true
+        }
+      })
+    }
+  },
+
+  generate: {
+    routes () {
+      const fs = require('fs')
+      const path = require('path')
+      const yamlFront = require('yaml-front-matter')
+      return fs.readdirSync('./content/products').map((file) => {
+        return {
+          route: `/product/${path.parse(file).name}`
+          // payload: yamlFront.loadFront(require(`./content/products/${file}`))
+        }
+      })
+    }
   }
 }
