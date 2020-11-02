@@ -71,8 +71,6 @@
           Tri-Treasure welcomes your comments regarding this Statement of Privacy. If you believe that Tri-Treasure has not adhered to this Statement, please contact Tri-Treasure's webmaster. We will use commercially reasonable efforts to promptly determine and remedy the problem.
         </p> <p>
           <strong>Tri-Treasure Marketing</strong><br>
-          Blk 6 Lot 9, Christ the King St, <br>
-          Purok 8, Brgy. Sto. Nino, <br>
           Davao City, Davao del Sur <br>
           Email:   info@tri-treasure.com
         </p>

@@ -7,7 +7,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="contact-about">
             <h3>{{ settings.name }}</h3>
             <p>{{ settings.description }}</p>
@@ -21,7 +21,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="info">
             <div>
               <i class="ri-map-pin-line" />
@@ -39,9 +39,8 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300" />
-
+      </div>
+      <div class="row">
         <div class="col-md-12">
           <iframe
             :src="settings.google_map"

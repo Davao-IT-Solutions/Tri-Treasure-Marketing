@@ -8,6 +8,9 @@
 
         <div class="row content d-flex justify-content-center">
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="150">
+            <img :src="productData.attributes.thumbnail" class="img-fluid d-flex" style="max-width: 300px;margin:0 auto;">
+          </div>
+          <div class="col-lg-8 mt-4" data-aos="fade-up" data-aos-delay="150">
             <nuxt-content :document="productData2" />
           </div>
         </div>
@@ -18,13 +21,13 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params, payload }) {
+  async asyncData ({ $content, params }) {
     const productData = await require(`~/content/products/${params.slug}.md`)
     const productData2 = await $content('products', `${params.slug}`).fetch()
+    console.log(productData2)
     return {
       productData,
-      productData2,
-      payload
+      productData2
     }
   },
   head () {
