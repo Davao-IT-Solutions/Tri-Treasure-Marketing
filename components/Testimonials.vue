@@ -6,8 +6,8 @@
         <h2>Testimonials</h2>
       </div>
 
-      <div class="row owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200">
-        <div v-for="(testi, index) in testimonials" :key="index" class="testimonial-wrap col-sm-12 col-md-12 col-lg-6">
+      <div class="row owl-carousel testimonials-carousel">
+        <div v-for="(testi, index) in testimonials" :key="index" class="testimonial-wrap col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" :data-aos-delay="index * 300">
           <div class="testimonial-item">
             <img :src="testi.picture" class="testimonial-img" alt="">
             <h3>{{ testi.name }}</h3>

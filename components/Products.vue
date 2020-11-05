@@ -3,8 +3,8 @@
   <section id="more-services" class="more-services">
     <div class="container">
       <div class="row">
-        <div v-for="item in products" :key="item" class="col-md-6 d-flex align-items-stretch mb-3">
-          <div class="card" :style="`background-position-y: top;background-image: url(${item.attributes.thumbnail});`" data-aos="fade-up" data-aos-delay="100">
+        <div v-for="(item, index) in products" :key="item" class="col-md-6 d-flex align-items-stretch mb-3">
+          <div class="card" :style="`background-position-y: top;background-image: url(${item.attributes.thumbnail});`" data-aos="fade-up" :data-aos-delay="index * 300">
             <div class="card-body">
               <h5 class="card-title">
                 <nuxt-link :to="`/product/${item.slug}`">

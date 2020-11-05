@@ -24,7 +24,6 @@ export default {
   async asyncData ({ $content, params }) {
     const productData = await require(`~/content/products/${params.slug}.md`)
     const productData2 = await $content('products', `${params.slug}`).fetch()
-    console.log(productData2)
     return {
       productData,
       productData2

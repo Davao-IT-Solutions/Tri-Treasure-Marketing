@@ -1581,9 +1581,14 @@ section {
   color: #3498db;
 }
 
+#header {
+  background-color: #ffffff;
+}
+
 .inner-page {
   padding: 15px 0;
   margin-top: 60px;
+  background-color: #f7fbfe;
 }
 
 main {

@@ -22,6 +22,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
       }
     ],
     script: [
@@ -65,6 +69,14 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    {
+      src: '~/plugins/aos.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/vue-fb-customer-chat.js',
+      ssr: false
+    }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
