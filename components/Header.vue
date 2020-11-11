@@ -14,5 +14,9 @@
 </template>
 
 <style>
-
+@media (max-width: 425px) {
+  #header .logo img {
+    max-height: 32px;
+  }
+}
 </style>

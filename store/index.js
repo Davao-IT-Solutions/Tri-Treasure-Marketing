@@ -1,4 +1,5 @@
 export const state = () => ({
+  showMobileNav: false,
   productsItems: []
 })
 
@@ -17,6 +18,9 @@ export const mutations = {
     // list.sort(sortByDate)
     list.reverse(sortByDate)
     state.productsItems = list
+  },
+  setShowMobileNav (state, value) {
+    state.showMobileNav = !!(value)
   }
 }
 

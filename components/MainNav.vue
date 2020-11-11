@@ -1,33 +1,44 @@
 <template>
-  <nav class="nav-menu d-none d-lg-block">
+  <nav :class="className">
     <ul>
       <nuxt-link tag="li" to="/">
-        <a>Home</a>
+        <a @click="hideMobileClick">Home</a>
       </nuxt-link>
 
       <nuxt-link tag="li" to="/about">
-        <a href="#">About</a>
+        <a @click="hideMobileClick">About</a>
       </nuxt-link>
 
       <nuxt-link tag="li" to="/products">
-        <a href="#">Products</a>
+        <a @click="hideMobileClick">Products</a>
       </nuxt-link>
-
+      <!--
       <nuxt-link tag="li" to="/testimonials">
-        <a href="#">Testimonials</a>
+        <a @click="hideMobileClick">Testimonials</a>
       </nuxt-link>
-
+      -->
       <nuxt-link tag="li" to="/contact">
-        <a href="#">Contact</a>
+        <a @click="hideMobileClick">Contact</a>
       </nuxt-link>
 
       <!--<nuxt-link tag="li" class="get-started" to="/get-started">
-        <a href="#">Get Started</a>
+        <a @click="hideMobileClick">Get Started</a>
       </nuxt-link>-->
     </ul>
   </nav><!-- .nav-menu -->
 </template>
-
-<style>
-
-</style>
+<script>
+export default {
+  props: {
+    className: {
+      type: String,
+      default: 'nav-menu d-none d-lg-block'
+    }
+  },
+  methods: {
+    hideMobileClick () {
+      this.$store.commit('setShowMobileNav', false)
+    }
+  }
+}
+</script>

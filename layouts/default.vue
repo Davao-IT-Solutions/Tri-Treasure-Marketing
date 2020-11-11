@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MobileNav />
     <Header />
     <main id="main">
       <Nuxt />
@@ -7,7 +8,11 @@
     <Footer />
   </div>
 </template>
+<script>
+export default {
 
+}
+</script>
 <style>
 
 </style>

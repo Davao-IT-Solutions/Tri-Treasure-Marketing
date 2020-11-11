@@ -38,5 +38,13 @@ export default {
 </script>
 
 <style>
-
+@media (max-width:425px) {
+  .section-title h2::before {
+    margin:0 ;
+  }
+  .section-title h2::before,
+  .section-title h2::after {
+      content: none;
+  }
+}
 </style>

@@ -3,7 +3,7 @@
   <section id="more-services" class="more-services">
     <div class="container">
       <div class="row">
-        <div v-for="(item, index) in products" :key="item" class="col-md-6 d-flex align-items-stretch mb-3">
+        <div v-for="(item, index) in products" :key="index" class="col-md-6 d-flex align-items-stretch mb-3">
           <div class="card" :style="`background-position-y: top;background-image: url(${item.attributes.thumbnail});`" data-aos="fade-up" :data-aos-delay="index * 300">
             <div class="card-body">
               <h5 class="card-title">
