@@ -2,9 +2,9 @@
 date: 2020-11-01T10:58:03.656Z
 thumbnail: /images/uploads/image3.jpeg
 title: MAKABUHI Herbal Panyawan Capsule
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-  malesuada vitae massa non convallis. Donec luctus fringilla scelerisque.
-  Phasellus augue ex, vestibulum at mi ac, malesuada faucibus velit.
+description: Pinapaganda ang daluy ng dugo, Iwas Heart attack at stroke, Mabuti
+  para sa Diabetes,  Panlaban sa Cancer, Pinapaganda ang immune system at
+  Mababawasan ang pagkakaroon ng wrinkles
 status: new
 source_link: ""
 live_link: ""
